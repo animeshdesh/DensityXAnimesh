@@ -1,0 +1,116 @@
+.heroContainer {
+  background-color: black;
+  padding: 5rem; /* This will take the full height of the viewport */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+  padding-top: 5vh; /* Pushes the content down to 25% of the viewport height */
+  align-items: center;
+  text-align: center; /* Center the text horizontally */
+}
+.heroHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Use vh unit for vertical padding */
+  gap: 1rem; /* Add gap between the headings */
+}
+h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 5rem; /* Start with a base font-size */
+  font-weight: 700;
+  line-height: 1.2; /* Improve line spacing */
+}
+p {
+  font-size: 1.3rem; /* Start with a base font-size */
+}
+
+.heroFuture {
+  background: linear-gradient(97deg, #78e65d 47.68%, #d5fa39 70.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Neurial Grotesk", Arial, Helvetica, sans-serif;
+  font-size: 6rem; /* Larger font-size for emphasis */
+  line-height: 1; /* Tighter line spacing for larger text */
+  letter-spacing: -0.05em; /* Adjust letter spacing */
+}
+.divHero {
+  width: 100%;
+  padding: 120px;
+  background: rgb(120, 230, 93);
+  background: radial-gradient(
+    circle,
+    rgba(120, 230, 93, 1) 0%,
+    rgba(0, 0, 0, 1) 43%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imagesHero1 {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  left: 33%;
+}
+
+.imagesHero2 {
+  height: 400px;
+  z-index: 2;
+  position: absolute;
+  right: 33%;
+}
+.imagesHeroMain {
+  height: 500px;
+  z-index: 4;
+}
+.heroServices {
+  border: 1.5px solid rgba(55, 107, 76, 0.96);
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 10px 0px rgba(235, 255, 37, 0.2);
+  backdrop-filter: blur(26.25px);
+  display: flex;
+  height: 171px;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding: 0 5rem;
+}
+h2 {
+  font-size: 3rem;
+  color: #ebff25;
+}
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller font-size on tablets */
+  }
+
+  .heroFuture {
+    font-size: 4.5rem; /* Adjust font-size for the 'future' text */
+  }
+  .heroContainer {
+    padding-top: 5vh; /* Less padding on smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Even smaller font-size on mobile phones */
+  }
+
+  .heroFuture {
+    font-size: 3.5rem; /* Adjust font-size for the 'future' text on mobile */
+  }
+  .heroContainer {
+    padding-top: 5vh; /* Even less padding on mobile devices */
+  }
+}

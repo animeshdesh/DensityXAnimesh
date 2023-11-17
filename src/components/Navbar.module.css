@@ -1,32 +1,30 @@
 .container {
   display: flex;
-  padding: 24px 216px;
-  justify-content: center;
+  padding: 1.5em 5%;
+  justify-content: space-between;
   align-items: center;
-  gap: 387px;
-  align-self: stretch;
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid transparent;
   background: #000000;
   backdrop-filter: blur(20px);
 }
 
 .mainLogoCss {
-  width: 99.953px;
-  height: 24px;
+  width: auto;
+  height: 1.5em;
 }
 
 .navItems {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 56px;
+  gap: 1em;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 .navButton {
   display: flex;
   height: 48px;
-  padding: 16px 32px;
+  padding: 1em 2em;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -41,4 +39,34 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 1em; /* Smaller padding */
+    gap: 1em; /* Adjust gap */
+  }
+
+  .navItems {
+    justify-content: center;
+    gap: 0.5em; /* Smaller gap for smaller screens */
+  }
+
+  .navButton {
+    padding: 0.5em 1em; /* Smaller button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens like mobile devices */
+  .container {
+    gap: 0.5em;
+  }
+
+  .navItems a,
+  .navButton {
+    font-size: 0.8em; /* Smaller font size for links and button */
+  }
 }
