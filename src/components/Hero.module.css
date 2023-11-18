@@ -18,14 +18,14 @@
   padding: 0; /* Use vh unit for vertical padding */
   gap: 1rem; /* Add gap between the headings */
 }
-h1 {
+.heroHeading > h1 {
   margin: 0; /* Remove default margin */
   font-size: 5rem; /* Start with a base font-size */
   font-weight: 700;
-  line-height: 1.2; /* Improve line spacing */
+  line-height: 1.2;
 }
-p {
-  font-size: 1.3rem; /* Start with a base font-size */
+.heroHeading > p {
+  font-size: 1.3rem;
 }
 
 .heroFuture {
@@ -84,10 +84,11 @@ p {
   align-self: stretch;
   padding: 0 5rem;
 }
-h2 {
+.heroServices > h2 {
   font-size: 3rem;
   color: #ebff25;
 }
+
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
   h1 {
@@ -112,5 +113,41 @@ h2 {
   }
   .heroContainer {
     padding-top: 5vh; /* Even less padding on mobile devices */
+  }
+}
+
+/* Media query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .heroServices {
+    width: 80%; /* Reduce width for smaller screens */
+    padding: 0 3rem; /* Reduce padding on the sides */
+  }
+
+  h2 {
+    font-size: 2rem; /* Adjust h2 font size for tablets */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust p font size for tablets */
+  }
+}
+
+/* Media query for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .heroServices {
+    width: 90%; /* Further reduce width for mobile screens */
+    padding: 0 1rem; /* Reduce padding on the sides */
+    height: auto; /* Allow height to adjust based on content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust h2 font size for mobile phones */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust p font size for mobile phones */
   }
 }

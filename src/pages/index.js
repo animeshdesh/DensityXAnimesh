@@ -4,6 +4,9 @@ import { Link } from "gatsby";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import "../index.css";
+import Services from "../components/Services";
+import WhiteServices from "../components/WhiteServices";
+import Derivates from "../components/Derivates";
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -11,6 +14,9 @@ const IndexPage = () => {
     <>
       <Navbar />
       <Hero />
+      <Services />
+      <WhiteServices />
+      <Derivates />
     </>
   );
 };

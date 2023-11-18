@@ -1,0 +1,89 @@
+.serviceDiv {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.serviceImg {
+  width: 15%;
+  margin: 2rem;
+}
+
+.servicePrice {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem;
+  gap: 25px;
+}
+.servicesImage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.servicePrice > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+.servicePrice > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ebff25;
+}
+
+.servicesContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.singlefeature {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background: var(--neutrals-grey-9, #19191d);
+}
+.singlefeature > img {
+  width: 146px;
+  height: 30px;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.servicesContainer2 {
+  display: flex;
+  width: 1140px;
+  height: 171px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(16, 16, 16, 0.4);
+  backdrop-filter: blur(26.25px);
+}
+.graphImg > img {
+  margin: 3rem;
+}
+
+/* Media query for smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .heroServices {
+    flex-direction: column; /* Stack divs vertically */
+    align-items: center; /* Center divs horizontally */
+    text-align: center; /* Center text within divs */
+  }
+  .serviceImg {
+    width: 40%;
+  }
+}

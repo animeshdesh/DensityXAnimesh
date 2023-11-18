@@ -1,0 +1,27 @@
+.whiteservicecontainer {
+  background-color: white;
+  height: 350px;
+  padding-top: 5rem;
+}
+
+.whiteservicecontainer > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 5rem;
+}
+.whiteservicecontainer > p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 15px;
+  color: var(--neutrals-grey-8, #32333a);
+}
+.whiteservicecontainer1 {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 5rem;
+}
+.whiteservicecontainer1 > img {
+  width: 30%;
+}

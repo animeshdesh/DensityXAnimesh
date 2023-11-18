@@ -1,0 +1,36 @@
+.DerivatesContainer {
+  background-color: black;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+.DerivatesContainer > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  width: 40%;
+}
+.DerivatesBox {
+  display: flex;
+  gap: 50px;
+  margin: 5rem;
+}
+.DerivatesBox > img {
+  width: 50%;
+  margin: 35px;
+}
+.DerivatesBox1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.DerivatesBox1 > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
